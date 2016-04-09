@@ -1,0 +1,375 @@
+body{
+	background-color: #ffffff;
+}
+.box{
+	float: left;
+	margin: 10px;
+	height: 50px;
+	width: 0px;
+	border-top-width: 50px;
+	border-top-style: solid;
+	border-top-color: red;
+	
+	border-right-width: 50px;
+	border-right-style: solid;
+	border-right-color: blue;
+	
+	border-bottom-width: 50px;
+	border-bottom-style: solid;
+	border-bottom-color: green;
+	
+	border-left-width: 50px;
+	border-left-style: solid;
+	border-left-color: transparent;
+}
+
+.box2{
+	float:left;
+	height: 200px;
+	width: 600px;
+	background-color: #ff8080;
+	position: relative;
+}
+
+.box2:before {
+    content: '';
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.box3{
+	float:left;
+}
+
+
+.social-media{
+	background: url(../social-icon-sprite.jpg);
+	height: 32px;
+	width: 32px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 10px;
+	float: left;
+}
+
+#fb-btn{
+	background-position: -96px 0px;
+
+}
+
+#fb-btn:hover{
+	background-position: -96px -32px;
+}
+
+#twitter-btn{
+	background-position: -128px 0px;
+}
+
+#twitter-btn:hover{
+	background-position: -128px -32px;
+}
+
+#in-btn{
+	background-position: -160px 0px;
+}
+
+#in-btn:hover{
+	background-position: -160px -32px;
+}
+
+.bubble{
+	background-color: #0082c8;
+	height: 150px;
+	width: 200px;
+	margin: 20px 50px 0 30px;
+	border-radius: 20px;
+	position: relative;
+	float: left;
+}
+
+.bubble:after{
+	content: '';
+	height: 0px;
+	width: 0px;
+	
+	position: absolute;
+	bottom: -60px;
+	left: 30px;
+	border-top-width: 30px;
+	border-top-style: solid;
+	border-top-color: #0082c8;
+	
+	border-right-width: 30px;
+	border-right-style: solid;
+	border-right-color: transparent;
+	
+	border-bottom-width: 30px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+	
+	border-left-width: 30px;
+	border-left-style: solid;
+	border-left-color: #0082c8;
+	
+}
+
+.ribbon{
+	background-color: #ff0000;
+	height: 200px;
+	width: 150px;
+	float: left;
+	margin: 30px 0 0 0;
+	position: relative;
+}
+
+.ribbon:before{
+	content: 'Ribbn';
+	color: #ffffff;
+	font-size: 38px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	margin: 50px 0 0 0;
+	height: 38px;
+	width: 150px;
+	position: absolute;
+	
+}
+
+.ribbon:after{
+	content: '';
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	display: block;
+	top: 200px;
+	border-top-width: 75px;
+	border-top-style: solid;
+	border-top-color: #ff0000;
+	
+	border-right-width: 75px;
+	border-right-style: solid;
+	border-right-color: #ff0000;
+	
+	border-bottom-width: 75px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+	
+	border-left-width: 75px;
+	border-left-style: solid;
+	border-left-color: #ff0000;
+}
+
+
+.ribbon-2{
+	background-color:  red;
+	height: 50px;
+	width: 300px;
+	float: left;
+	margin: 50px 0 0 100px;
+	position: relative;
+}
+
+.ribbon-2:before{
+	content: '';
+	height: 0px;
+	width: 0px;
+	top: 10px;
+	left: -40px;
+	z-index: -1;
+	position: absolute;
+	display: block;
+	border-top-width: 25px;
+	border-top-style: solid;
+	border-top-color: green;
+	
+	border-right-width: 25px;
+	border-right-style: solid;
+	border-right-color: green;
+	
+	border-bottom-width: 25px;
+	border-bottom-style: solid;
+	border-bottom-color: green;
+	
+	border-left-width: 25px;
+	border-left-style: solid;
+	border-left-color: transparent;
+}
+
+.ribbon-2:after{
+	content: '';
+	height: 0px;
+	width: 0px;
+	top: 10px;
+	left: 290px;
+	z-index: -1;
+	position: absolute;
+	border-top-width: 25px;
+	border-top-style: solid;
+	border-top-color: green;
+	
+	border-right-width: 25px;
+	border-right-style: solid;
+	border-right-color: transparent;
+	
+	border-bottom-width: 25px;
+	border-bottom-style: solid;
+	border-bottom-color: green;
+	
+	border-left-width: 25px;
+	border-left-style: solid;
+	border-left-color: green;
+}
+
+.ribbon-2-content{
+	height: 50px;
+	width: 300px;
+	float: left;
+	position: relative;
+}
+
+.ribbon-2-content:before{
+	content: '';
+	width: 10px;
+	height: 0px;
+	position: absolute;
+	display: block;
+	bottom: -10px;
+	left: -10px;
+	z-index: 2;
+	border-right-width: 10px;
+	border-right-style: solid;
+	border-right-color: blue;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
+
+.ribbon-2-content:after{
+	content: '';
+	width: 10px;
+	height: 0px;
+	position: absolute;
+	display: block;
+	bottom: -10px;
+	right: -10px;
+	z-index: 2;
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-left-color: blue;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
+
+.example{
+	height: 400px;
+	width:600px;
+	background-color: #ffffff;
+	border: solid;
+	border-width: 1px;
+	border-color: #666666;
+	margin: 250px 0 0 200px;
+	position: relative;
+}
+
+.rb-1{
+	height: 30px;
+	width: 200px;
+	background-color: #00a4ef;
+	left: -10px;
+	top: 40px;	
+	position: relative;	
+	
+}
+
+.example h1 {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	padding-top: 7px;
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+.rb-1:before{
+	content: '';
+	width: 10px;
+	height: 0px;
+	position: absolute;
+	display: block;
+	bottom: -10px;
+	left: -10px;
+	z-index: 2;
+	border-right-width: 10px;
+	border-right-style: solid;
+	border-right-color: #035074;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
+
+.rb-1:after{
+	content: '';
+	width: 10px;
+	height: 30px;
+	position: absolute;
+	display: block;
+	right: 0px;
+	bottom: 5px;
+	background-color: #035074;
+	-webkit-transform:skew(0deg,45deg); 
+	-moz-transform:skew(0deg,45deg); 
+	-o-transform:skew(0deg,45deg); 
+	transform:skew(0deg,45deg); 
+}
+
+.rb-2{
+	height: 30px;
+	width: 620px;
+	background-color: #00a4ef;
+	top: 80px;	
+	position: relative;	
+	left: -10px;
+}
+
+.rb-2:before{
+	content: '';
+	width: 10px;
+	height: 0px;
+	position: absolute;
+	display: block;
+	bottom: -10px;
+	left: -10px;
+	z-index: 2;
+	border-right-width: 10px;
+	border-right-style: solid;
+	border-right-color: #035074;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
+
+.rb-2:after{
+	content: '';
+	width: 10px;
+	height: 0px;
+	position: absolute;
+	display: block;
+	bottom: -10px;
+	right: -10px;
+	z-index: 2;
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-left-color: #035074;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+}
